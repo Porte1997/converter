@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="change.css"/>
+        <title>Base convert</title>
+    </head>
+    <body>
+        <h1 style="color: white;">Converter</h1>
+        <div class="main">
+            <section class="section1">
+                <label for="unit1">From</label>
+                <select id="unit1">
+                    <option value="decimal">Decimal</option>
+                    <option value="hex">Hexadecimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="binary">Binary</option>
+                </select>
+                <textarea id="input"></textarea>
+            </section>
+
+            <section class="section2">
+                <button id="swap" onclick="change()">Swap</button>
+                <br/>
+                <button id="submit" onclick="converts()">Submit</button>
+            </section>
+    
+            <section class="section3">
+                <label for="unit2">To</label>
+                <select id="unit2">
+                    <option value="decimal">Decimal</option>
+                    <option value="hex" selected>Hexadecimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="binary">Binary</option>
+                </select>
+                <textarea id="output" disabled></textarea>
+            </section>
+        </div>
+
+
+        <script src="convert.js"></script>
+    </body>
+</html>
